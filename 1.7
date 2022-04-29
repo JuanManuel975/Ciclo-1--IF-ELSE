@@ -1,0 +1,32 @@
+/*  Escribir un programa en C++ que teniendo como datos de entrada dos números enteros,
+determine si el primer número es múltiplo del segundo.
+Ejemplo:
+Ingrese dos números enteros (N1 N2):9 3
+9 es múltiplo de 3
+Ingrese dos números enteros (N1 N2):10 7
+10 no es múltiplo de 7
+ */
+
+#include <iostream>
+#include<math.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main()
+{
+    int numero1, numero2;
+        cout << "\nIntroduzca un numero: \n"; cin >> numero1;
+        cout << "\nIntroduzca un numero: \n"; cin >> numero2;
+
+        if (numero1 % numero2) {
+            cout << "Impar";
+            
+        }
+        else {
+            cout << "Par";
+        }
+    return 0;
+   }
+   
