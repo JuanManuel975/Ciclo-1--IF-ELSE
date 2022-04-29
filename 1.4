@@ -1,0 +1,40 @@
+ Si la persona tiene de 18 a 50 años pagará 15 soles.
+ Si la persona tiene más de 50 años pagará 5 soles.
+Debe validar que la edad es un valor mayor que cero.
+Ejemplo:
+Ingrese la edad de la persona: 18 años
+El precio de la entrada es de 15 soles */
+
+#include <iostream>
+#include<math.h>
+#include<stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int edad;
+    cout << "\nIngrese la edad de la persona: "; cin >> edad;
+
+    if (edad >= 1 && edad <= 95) {
+        if (edad < 18) {
+
+            cout << "\nEl precio de la entrada es de 7 soles";
+        }
+        if (edad >= 18 && edad <= 50) {
+            cout << "\nEl precio de la entrada es de 15 soles";
+        }
+        if (edad > 50) {
+         cout << "\nEl precio de la entrada es de 5 soles";
+        }
+        }
+    else { 
+        cout << "\nEsta muerto";
+        cout<<"\n";
+    
+    }
+
+    return 0;
+   }
+    
+  
