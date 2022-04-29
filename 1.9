@@ -1,0 +1,36 @@
+/*  
+Escribir un programa en C++ que reciba como datos de entrada los goles del equipo local
+(gl) y los goles del equipo visitante (gv), imprima una cadena de caracteres indicando qué
+equipo ha ganado (resultados posibles: “local”, “visitante”, “empate”). Debe validar que
+los goles sean valores mayores o iguales a cero.
+Ejemplo:
+Ingrese la cantidad de goles del equipo local: 7
+Ingrese la cantidad de goles del equipo visitante: 4
+Ganó el equipo local
+ */
+
+#include <iostream>
+#include<math.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main()
+{
+   
+    int gl, gv;
+    cout << "Goles del local :"; cin >> gl;
+    cout << "Goles del visitante :"; cin >> gv;
+    if (gl > gv) {
+        cout << "Gano el equipo local";
+    }
+    if (gv > gl) {
+        cout << "Gano el equipo visitante";
+    }
+    if (gv == gl) {
+        cout << "Empate";
+    }
+       return 0;
+   }
+    
