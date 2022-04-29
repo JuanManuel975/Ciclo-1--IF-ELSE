@@ -1,0 +1,48 @@
+/*  
+Escribir un programa en C++ que permita calcular el número de pulsaciones que debe tener
+una persona por cada 10 segundos de ejercicio aeróbico.
+Las raíces se calculan utilizando
+la fórmula:
+3
+Si la persona es del sexo femenino, la fórmula es:
+Número de pulsaciones = (220 – edad) /10 y
+Si el sexo es masculino:
+Número de pulsaciones = (210 – edad) /10.
+Ejemplo:
+Ingrese el sexo de la persona (F o M): F
+Ingrese la edad de la persona: 24
+El número debe ser de 20 pulsaciones por cada 10 segundos aproximadamente.
+ */
+
+#include <iostream>
+#include<math.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main()
+{
+    char sexo;
+    float pulsaciones, edad,mujer=0;
+
+
+    cout << "Cual es su edad: "; cin >> edad;
+    cout << "Ingrese el sexo de la persona (F - M): "; cin >> sexo;
+    sexo = toupper(sexo);
+
+    switch (sexo)
+    {
+    case'F':
+        pulsaciones = (220 - edad) / 10;
+        cout << "\nEl numero de pulsaciones debe ser  " << pulsaciones; cout << "   por cada 10 segundos aproximadamente";
+        break;
+    case'M':
+        pulsaciones = (210 - edad) / 10;
+        cout << "\nEl numero de pulsaciones debe ser  " << pulsaciones; cout << "   por cada 10 segundos aproximadamente";
+        cout << "\n";
+        break;
+    }
+    return 0;
+   }
+    
