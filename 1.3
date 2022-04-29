@@ -1,0 +1,29 @@
+ Si la nota es mayor de 12.50 y menor de 20, mostrar el mensaje “Aprobado”.
+Para ello debe validar si la nota está entre 0 y 20. */
+
+#include <iostream>
+#include<math.h>
+#include<stdio.h>
+
+using namespace std;
+
+int main()
+{
+    float nota;
+    cout << "\nIngrese la nota del alumno: "; cin >> nota;
+
+    if (nota >= 0 && nota <= 20) {
+        if (nota <= 12.50) {
+
+            cout << "\nDesaprobado";
+        }
+        if (nota >= 13) {
+
+            cout << "\nAprovado";
+        }
+    }
+    else {
+        cout << "\nNumero invalido";
+    }
+    return 0;
+}
