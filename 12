@@ -1,0 +1,29 @@
+/* Una operadora necesita calcular el recibo de consumo, el cual se obtiene de la siguiente
+manera:
+ Si consume 4 GB o menos paga S/.50 por mes.
+ Si consume más de 4 GB, hasta de 8GB paga S/.85 por mes
+ Si consume más de 8 paga S/. 85 más S/. 4.50 por cada GB adicional (por encima de 8).
+Debe validar que el consumo debe ser mayor o igual a cero.
+Escriba un programa en C++ para resolver el problema.
+ */
+
+#include <iostream>
+#include<math.h>
+#include<stdio.h>
+#include<stdlib.h>
+using namespace std;
+int main() {
+
+    float g, pago, ga;
+    cout << "Gigas consumidos: "; cin >> g;
+    if (g <= 4) {
+        cout << "Debe pagar 50 soles por mes";
+    }
+    if (g >= 5 && g <= 8) {
+        cout << "Debe pagar 85 soles por mes";
+    }
+    if (g > 8) {
+        ga=g-8;
+        cout << "Debe pagar " << 85+(ga*4.50);
+    }
+}
